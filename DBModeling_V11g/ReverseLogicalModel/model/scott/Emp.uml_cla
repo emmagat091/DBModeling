@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.4.0'/>
+ <uml:Class xmi:uuid='urn:uuid:6bf1b2fc-0bd1-4f65-a98d-4c5994d3ccaf'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Emp'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:27ecb58b-8c5c-44ae-a95d-104688b346a6'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='empType'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#String'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:28de5f66-2f16-4727-88b3-052dc43dc373'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='empno'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:d4b7fc59-f6ea-4234-af76-44a8b4362c14'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:11608b82-e030-4c1c-a13b-42e1988beec2'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='name'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#String'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:4744059e-b26d-4780-afdd-cc2d29cd5df6'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='salary'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:25d84e12-920c-4324-afcd-aca86545e626'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='hoursWorked'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:9acfd333-2a00-4866-a9b3-fef24b65f4bd'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='deptno'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:c34e3e3d-ee92-46dd-9886-94bdcaf8d0f4'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>

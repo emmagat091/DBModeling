@@ -1,0 +1,298 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">13d309cd-2903-46b4-9e02-ff2cb766f0bb</identifier>
+  </ID>
+  <name>EMP</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">38f64ccc-de78-4acd-80ac-126b67036afe</identifier>
+      </ID>
+      <name>EMP_TYPE</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">6ad4d841-1ffb-42e5-8cb6-6489e17f7542</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column EMP_TYPE created as discriminator column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">47c321c7-a0ec-42c7-a1e2-2a08e7428d1e</identifier>
+      </ID>
+      <name>EMPNO</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">fd255673-4a01-411f-a3b1-8eb2ceaa34f4</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">8</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column EMPNO created from UML attribute &quot;empno&quot; in UML class &quot;Employee&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e086d7a8-d00e-4b3d-b55e-ddd4261d8905</identifier>
+      </ID>
+      <name>NAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">edaa1196-f56f-478c-b563-70435ca8a737</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column NAME created from UML attribute &quot;name&quot; in UML class &quot;Employee&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">54c55a35-6880-4a60-a565-98242b83ac4c</identifier>
+      </ID>
+      <name>SALARY</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">3eb535a6-f3fc-4bcb-ad20-bc5a1f39125a</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">2</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column SALARY created from UML attribute &quot;salary&quot; in UML class &quot;Employee&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">4ea6b737-d3e2-41a5-9905-79213b2e48d3</identifier>
+      </ID>
+      <name>HOURS_WORKED</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">2938fcd7-43df-42b7-8f8b-f950ab9b7898</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column HOURS_WORKED created from UML attribute &quot;hours worked&quot; in UML class &quot;Part Time&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cd380a4d-7dd2-44f5-b979-add33890a342</identifier>
+      </ID>
+      <name>DEPTNO</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c24a770b-238f-4856-9d17-f629535dbf04</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column DEPTNO created as default foreign key column for foreign key &quot;EMP_DEPARTMENT_FK&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">2ddbf7b5-a428-4d86-b61b-f41d875a3947</identifier>
+      </ID>
+      <name>EMP_DEPARTMENT_FK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPTNO</name>
+          <identifier class="java.lang.String">cd380a4d-7dd2-44f5-b979-add33890a342</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>EMP</name>
+            <identifier class="java.lang.String">13d309cd-2903-46b4-9e02-ff2cb766f0bb</identifier>
+            <schemaName>SCOTT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCOTT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DEPARTMENTS_PK1</name>
+        <identifier class="java.lang.String">2e7cf036-d01e-4c81-b044-42c3c389b953</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENTS</name>
+          <identifier class="java.lang.String">1394fcd0-c0d4-4a66-821d-32be3b5c32d9</identifier>
+          <schemaName>SCOTT</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCOTT</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e17c58d8-6165-48f0-be7a-6e549e4dfec1</identifier>
+      </ID>
+      <name>EMP_PK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>EMPNO</name>
+          <identifier class="java.lang.String">47c321c7-a0ec-42c7-a1e2-2a08e7428d1e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>EMP</name>
+            <identifier class="java.lang.String">13d309cd-2903-46b4-9e02-ff2cb766f0bb</identifier>
+            <schemaName>SCOTT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCOTT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>EMP_PK1</name>
+        <identifier class="java.lang.String">591e77ce-8a1d-44f8-89d8-ea20f5f8a0c4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>EMP</name>
+          <identifier class="java.lang.String">13d309cd-2903-46b4-9e02-ff2cb766f0bb</identifier>
+          <schemaName>SCOTT</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCOTT</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">591e77ce-8a1d-44f8-89d8-ea20f5f8a0c4</identifier>
+      </ID>
+      <name>EMP_PK1</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">579c8489-ae61-46c6-bac1-23b6ebb5c5c2</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">c1207185-cdfc-4cf4-b274-356542c74f24</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>EMPNO</name>
+              <identifier class="java.lang.String">47c321c7-a0ec-42c7-a1e2-2a08e7428d1e</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>EMP</name>
+                <identifier class="java.lang.String">13d309cd-2903-46b4-9e02-ff2cb766f0bb</identifier>
+                <schemaName>SCOTT</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SCOTT</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCOTT</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table EMP created from UML class &quot;Employee&quot;
+Primary key constraint EMP_PK1 created by default
+Foreign key constraint EMP_DEPARTMENT_FK created for UML association &quot;emps in dept&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SCOTT</name>
+  </schema>
+</table>

@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">d3cd1c59-2006-4713-852d-fe87df1cf95f</identifier>
+  </ID>
+  <name>LOCATIONS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">63e28526-c945-48ee-a190-34c8987ecdb4</identifier>
+      </ID>
+      <name>LOCATIONS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">c5adcb4c-3b25-430c-b475-f54a71e465c7</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column LOCATIONS_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">aa18914c-7fa9-4526-bbdd-49f1ee073a1d</identifier>
+      </ID>
+      <name>AREA</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">3700dc8a-887d-4f4d-ba30-e6e334a0d8f9</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">50</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>CHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column AREA created from UML attribute &quot;area&quot; in UML class &quot;Location&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">830c2727-c542-4aed-a2dd-41f6977c4644</identifier>
+      </ID>
+      <name>COUNTRY</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">65d88882-166e-402c-8c0b-a7946b8ebc6d</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">50</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>CHAR</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column COUNTRY created from UML attribute &quot;country&quot; in UML class &quot;Location&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">7eb56153-e58b-4d2d-994d-edf1106dd1ce</identifier>
+      </ID>
+      <name>LOCATIONS_PK1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>LOCATIONS_ID</name>
+          <identifier class="java.lang.String">63e28526-c945-48ee-a190-34c8987ecdb4</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>LOCATIONS</name>
+            <identifier class="java.lang.String">d3cd1c59-2006-4713-852d-fe87df1cf95f</identifier>
+            <schemaName>SCOTT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCOTT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>LOCATIONS_PK1</name>
+        <identifier class="java.lang.String">e8a4a887-59cb-426c-8d94-3d3a7fb9ed83</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>LOCATIONS</name>
+          <identifier class="java.lang.String">d3cd1c59-2006-4713-852d-fe87df1cf95f</identifier>
+          <schemaName>SCOTT</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCOTT</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e8a4a887-59cb-426c-8d94-3d3a7fb9ed83</identifier>
+      </ID>
+      <name>LOCATIONS_PK1</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">644b3bd4-b4e9-46b0-bb53-469ea38da7e0</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">f689e1cc-1a45-48cc-99bb-73dcbba9db56</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>LOCATIONS_ID</name>
+              <identifier class="java.lang.String">63e28526-c945-48ee-a190-34c8987ecdb4</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>LOCATIONS</name>
+                <identifier class="java.lang.String">d3cd1c59-2006-4713-852d-fe87df1cf95f</identifier>
+                <schemaName>SCOTT</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>SCOTT</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>SCOTT</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table LOCATIONS created from UML class &quot;Location&quot;
+Primary key constraint LOCATIONS_PK1 created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SCOTT</name>
+  </schema>
+</table>

@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">2d6cddb1-da02-4f9e-b2db-d3eb74cfbaff</identifier>
+  </ID>
+  <name>DEPARTMENTS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">6b7e3ed1-2351-4e48-b1ab-8249c934658c</identifier>
+      </ID>
+      <name>DEPARTMENT_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b60da5f1-0da5-488c-9dd4-6623c8c8a083</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column DEPARTMENT_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">859108ec-a05a-41f7-920f-e538549009b5</identifier>
+      </ID>
+      <name>GROUP</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">942becfc-3f35-4f38-ac82-0c63f472c8d0</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column GROUP created from UML attribute &quot;group&quot; in UML class &quot;Department&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">832535d2-4689-4f73-a0f9-7b4c48fe0ab0</identifier>
+      </ID>
+      <name>NAME</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">de332e43-e21f-4fba-9ee0-86d7928c69e8</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column NAME created from UML attribute &quot;name&quot; in UML class &quot;Department&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">f1cb9f9c-0d53-48f4-8da7-f5dbb1957bb4</identifier>
+      </ID>
+      <name>DEPARTMENTS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENT_ID</name>
+          <identifier class="java.lang.String">6b7e3ed1-2351-4e48-b1ab-8249c934658c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENTS</name>
+            <identifier class="java.lang.String">2d6cddb1-da02-4f9e-b2db-d3eb74cfbaff</identifier>
+            <schemaName>LOGICALMODEL</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DEPARTMENTS_PK</name>
+        <identifier class="java.lang.String">9ef57fd0-4d7a-499d-a2fb-ee0ad1a32936</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENTS</name>
+          <identifier class="java.lang.String">2d6cddb1-da02-4f9e-b2db-d3eb74cfbaff</identifier>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>LOGICALMODEL</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9ef57fd0-4d7a-499d-a2fb-ee0ad1a32936</identifier>
+      </ID>
+      <name>DEPARTMENTS_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">28950b7a-edfa-4127-a549-423a1bb50edf</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">b085db30-1fff-4cec-8648-21ffd53169ad</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>DEPARTMENT_ID</name>
+              <identifier class="java.lang.String">6b7e3ed1-2351-4e48-b1ab-8249c934658c</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>DEPARTMENTS</name>
+                <identifier class="java.lang.String">2d6cddb1-da02-4f9e-b2db-d3eb74cfbaff</identifier>
+                <schemaName>LOGICALMODEL</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>LOGICALMODEL</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>LOGICALMODEL</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table DEPARTMENTS created from UML class &quot;Department&quot;
+Primary key constraint DEPARTMENTS_PK created by default</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>LOGICALMODEL</name>
+  </schema>
+</table>

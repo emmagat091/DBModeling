@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">761c5d04-b5d5-4115-8ee1-4343ad849065</identifier>
+  </ID>
+  <name>SCOTT</name>
+</schema>

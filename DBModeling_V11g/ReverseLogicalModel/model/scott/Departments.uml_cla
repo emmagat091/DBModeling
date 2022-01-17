@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.4.0'/>
+ <uml:Class xmi:uuid='urn:uuid:7a81942d-c92b-426c-8d04-668093f70497'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Departments'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:4508efa2-7d86-41ca-89b7-8185b5ce104c'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='departmentsId'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:9f5f1f73-3c55-45d4-8b7e-28cad9e9814c'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:120ae164-22a5-4a36-896e-ce98111a6d83'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='group'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#String'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:3c620392-4a55-4eea-848c-2591d06cf118'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='name'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#String'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>

@@ -1,0 +1,182 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">5b1c7a66-a632-4ee3-87d7-302d4f0ed3c4</identifier>
+  </ID>
+  <name>DEPARTMENT_LOCATIONS</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">95bc766b-7817-4d6d-8a9f-2ebb4c805a03</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">224fe992-a82a-499d-9c6c-1ae2d6837e10</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleLite</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column DEPARTMENT_LOCATIONS_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">123a1d65-40db-46f1-ae4a-f209d7b3275f</identifier>
+      </ID>
+      <name>LOCATIONS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f4d515d9-9b02-4366-9f8b-6d99bd43ccc5</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleLite</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column LOCATIONS_ID created as default foreign key column for foreign key &quot;DEPARTMENT_LOCATIONS_LOCATIONS&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e53e65cf-bd65-43f5-9049-0569287db57f</identifier>
+      </ID>
+      <name>DEPARTMENTS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">fafe4004-18f9-4e00-8a97-892f701c7ec5</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleLite</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column DEPARTMENTS_ID created as default foreign key column for foreign key &quot;DEPARTMENT_LOCATIONS_DEPARTMEN&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">8151c272-71e0-4164-a27d-c27433ab2447</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_DEPARTMEN</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENTS_ID</name>
+          <identifier class="java.lang.String">e53e65cf-bd65-43f5-9049-0569287db57f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENT_LOCATIONS</name>
+            <identifier class="java.lang.String">5b1c7a66-a632-4ee3-87d7-302d4f0ed3c4</identifier>
+            <schemaName>SCOTT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCOTT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>1</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DEPARTMENTS_PK</name>
+        <identifier class="java.lang.String">2a93eda2-667e-4b01-8669-f966adc83c9f</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENTS</name>
+          <identifier class="java.lang.String">4502197b-536a-40cc-92a5-03fa6fb2ebf2</identifier>
+          <schemaName>SCOTT</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCOTT</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">5abd0593-855e-4764-9c2a-b234463de597</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_LOCATIONS</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>LOCATIONS_ID</name>
+          <identifier class="java.lang.String">123a1d65-40db-46f1-ae4a-f209d7b3275f</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENT_LOCATIONS</name>
+            <identifier class="java.lang.String">5b1c7a66-a632-4ee3-87d7-302d4f0ed3c4</identifier>
+            <schemaName>SCOTT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCOTT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>1</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>LOCATIONS_PK</name>
+        <identifier class="java.lang.String">0d4f1020-68da-4964-b03f-69ada6d8809c</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>LOCATIONS</name>
+          <identifier class="java.lang.String">608eea46-b62c-4fe1-a646-1af268595ab8</identifier>
+          <schemaName>SCOTT</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>SCOTT</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">75f9bd3b-5cec-4b6b-ab25-efba3f8b322c</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENT_LOCATIONS_ID</name>
+          <identifier class="java.lang.String">95bc766b-7817-4d6d-8a9f-2ebb4c805a03</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENT_LOCATIONS</name>
+            <identifier class="java.lang.String">5b1c7a66-a632-4ee3-87d7-302d4f0ed3c4</identifier>
+            <schemaName>SCOTT</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>SCOTT</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table DEPARTMENT_LOCATIONS created from many-to-many association &quot;department locations&quot;
+Primary key constraint DEPARTMENT_LOCATIONS_PK created by default
+Foreign key constraint DEPARTMENT_LOCATIONS_LOCATIONS created for UML association &quot;department locations_Locations&quot;
+Foreign key constraint DEPARTMENT_LOCATIONS_DEPARTMEN created for UML association &quot;department locations_Departments&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>SCOTT</name>
+  </schema>
+</table>

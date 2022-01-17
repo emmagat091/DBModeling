@@ -1,0 +1,235 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1112/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">2015aa16-56df-4325-a9d0-c310c459e6e7</identifier>
+  </ID>
+  <name>DEPARTMENT_LOCATIONSES</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">11c5f144-c352-4cd5-a441-b343e21e2b7e</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">753ab119-aee7-4799-8a52-0e4b444bbb3a</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column DEPARTMENT_LOCATIONS_ID created as default primary key column</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">189eaed4-547a-4ca3-b8d0-98005a97354c</identifier>
+      </ID>
+      <name>DEPARTMENT_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b60da5f1-0da5-488c-9dd4-6623c8c8a083</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column DEPARTMENT_ID created as default foreign key column for foreign key &quot;DEPARTMENT_LOCATIONS_DEPARTMEN&quot;</value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e1a3dd25-71ee-43cf-a203-1b4583ec15d2</identifier>
+      </ID>
+      <name>LOCATION_ID</name>
+      <dataTypeUsage>
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">b0a3de7f-95d6-4ec3-95b4-e38235ae07df</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">UML to Offline Database Transform: Column LOCATION_ID created as default foreign key column for foreign key &quot;DEPARTMENT_LOCATIONS_LOCATION&quot;</value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cf0f2cd9-d270-4a11-9774-e2c5e2bbb14b</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_DEPARTMEN</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENT_ID</name>
+          <identifier class="java.lang.String">189eaed4-547a-4ca3-b8d0-98005a97354c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENT_LOCATIONSES</name>
+            <identifier class="java.lang.String">2015aa16-56df-4325-a9d0-c310c459e6e7</identifier>
+            <schemaName>LOGICALMODEL</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>1</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DEPARTMENTS_PK</name>
+        <identifier class="java.lang.String">f1cb9f9c-0d53-48f4-8da7-f5dbb1957bb4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENTS</name>
+          <identifier class="java.lang.String">2d6cddb1-da02-4f9e-b2db-d3eb74cfbaff</identifier>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>LOGICALMODEL</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e92d3712-5dbb-46e6-a4e4-e51fef625de6</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONS_LOCATION</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>LOCATION_ID</name>
+          <identifier class="java.lang.String">e1a3dd25-71ee-43cf-a203-1b4583ec15d2</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENT_LOCATIONSES</name>
+            <identifier class="java.lang.String">2015aa16-56df-4325-a9d0-c310c459e6e7</identifier>
+            <schemaName>LOGICALMODEL</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>1</deleteMode>
+      <enabled>true</enabled>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>LOCATIONS_PK</name>
+        <identifier class="java.lang.String">81d1d059-c549-48d5-bd15-bd009916513e</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>LOCATIONS</name>
+          <identifier class="java.lang.String">8baadba9-ccc0-4260-9078-a64ea6f9c41c</identifier>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>LOGICALMODEL</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c58f788a-9f31-4198-8133-599a6385b0b2</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONSES_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENT_LOCATIONS_ID</name>
+          <identifier class="java.lang.String">11c5f144-c352-4cd5-a441-b343e21e2b7e</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>DEPARTMENT_LOCATIONSES</name>
+            <identifier class="java.lang.String">2015aa16-56df-4325-a9d0-c310c459e6e7</identifier>
+            <schemaName>LOGICALMODEL</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DEPARTMENT_LOCATIONSES_PK</name>
+        <identifier class="java.lang.String">263f25f5-4cea-47be-a947-88c05157fdd4</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPARTMENT_LOCATIONSES</name>
+          <identifier class="java.lang.String">2015aa16-56df-4325-a9d0-c310c459e6e7</identifier>
+          <schemaName>LOGICALMODEL</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>LOGICALMODEL</schemaName>
+        <type>INDEX</type>
+      </indexID>
+    </constraint>
+  </constraints>
+  <indexes>
+    <indexe>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">263f25f5-4cea-47be-a947-88c05157fdd4</identifier>
+      </ID>
+      <name>DEPARTMENT_LOCATIONSES_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <ID class="oracle.javatools.db.IdentifierBasedID">
+            <identifier class="java.lang.String">7ee37c23-034e-4c42-a8a4-14d82e176c91</identifier>
+          </ID>
+          <expression class="oracle.javatools.db.sql.ColumnUsage">
+            <ID class="oracle.javatools.db.IdentifierBasedID">
+              <identifier class="java.lang.String">5933fae6-088c-48f2-aef9-aa5e95879c7a</identifier>
+            </ID>
+            <objectID class="oracle.javatools.db.IdentifierBasedID">
+              <name>DEPARTMENT_LOCATIONS_ID</name>
+              <identifier class="java.lang.String">11c5f144-c352-4cd5-a441-b343e21e2b7e</identifier>
+              <parent class="oracle.javatools.db.IdentifierBasedID">
+                <name>DEPARTMENT_LOCATIONSES</name>
+                <identifier class="java.lang.String">2015aa16-56df-4325-a9d0-c310c459e6e7</identifier>
+                <schemaName>LOGICALMODEL</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <schemaName>LOGICALMODEL</schemaName>
+              <type>COLUMN</type>
+            </objectID>
+            <outerJoin>false</outerJoin>
+            <qualified>true</qualified>
+          </expression>
+          <order>ASC</order>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <schema>
+        <name>LOGICALMODEL</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </indexe>
+  </indexes>
+  <properties>
+    <entry>
+      <key>Comment</key>
+      <value class="java.lang.String">UML to Offline Database Transform: Table DEPARTMENT_LOCATIONSES created from many-to-many association &quot;department locations&quot;
+Primary key constraint DEPARTMENT_LOCATIONSES_PK created by default
+Foreign key constraint DEPARTMENT_LOCATIONS_LOCATION created for UML association &quot;department locations_Location&quot;
+Foreign key constraint DEPARTMENT_LOCATIONS_DEPARTMEN created for UML association &quot;department locations_Department&quot;</value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>LOGICALMODEL</name>
+  </schema>
+</table>

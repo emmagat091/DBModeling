@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmi:version='2.1' xmlns:xmi='http://schema.omg.org/spec/XMI/2.1' xmlns:uml='http://schema.omg.org/spec/UML/2.1.1/uml.xml'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='11.1.2.4.0'/>
+ <uml:Class xmi:uuid='urn:uuid:05288abe-80be-47f7-b19a-f22f9f8be0df'
+   isAbstract='false'
+   isActive='false'
+   isLeaf='false'
+   name='Locations'
+   visibility='public'>
+  <ownedAttribute xmi:uuid='urn:uuid:d46fbebd-54dc-47f0-86b7-9cca26f6bd4b'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='locationsId'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:be9a7367-4b1c-48a8-8a22-278fee81072c'
+     value='1'
+     visibility='public'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:9f5389e6-713e-4cb0-8d1d-e170ddebd570'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='area'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#String'/>
+  </ownedAttribute>
+  <ownedAttribute xmi:uuid='urn:uuid:ccffc271-e3bf-475e-9d32-f725d7c06cc1'
+    isDerived='false'
+    isDerivedUnion='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    name='country'
+    aggregation='none'>
+   <type href='http://schema.omg.org/spec/UML/2.1.1/uml.xml#String'/>
+  </ownedAttribute>
+ </uml:Class>
+</xmi:XMI>

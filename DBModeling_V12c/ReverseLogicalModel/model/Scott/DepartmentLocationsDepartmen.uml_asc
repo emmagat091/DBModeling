@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20110701' xmlns:uml='http://www.omg.org/spec/UML/20110701'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.1.3.0.0'/>
+ <uml:Association xmi:type='uml:Association' xmi:uuid='urn:uuid:d754a4c8-1718-4edc-a2bd-01d3182c4bdb'
+   isAbstract='false'
+   isDerived='false'
+   isFinalSpecialization='false'
+   isLeaf='false'
+   name='DepartmentLocationsDepartmen'
+   visibility='public'>
+  <memberEnd href='urn:uuid:e45c7a83-7838-4eeb-9419-b999ef451845'/>
+  <memberEnd href='urn:uuid:9ae4e1b7-dd5b-4c5c-8bba-49d2581ebb28'/>
+  <ownedEnd xmi:type='uml:Property' xmi:uuid='urn:uuid:e45c7a83-7838-4eeb-9419-b999ef451845'
+    isDerived='false'
+    isDerivedUnion='false'
+    isID='false'
+    isLeaf='false'
+    isOrdered='false'
+    isReadOnly='false'
+    isStatic='false'
+    isUnique='true'
+    aggregation='composite'>
+   <association href='urn:uuid:d754a4c8-1718-4edc-a2bd-01d3182c4bdb'/>
+   <type href='urn:uuid:73ba0b7c-a56f-47ba-945d-9f0e4a4681a5'/>
+   <lowerValue xmi:type='uml:LiteralInteger' xmi:uuid='urn:uuid:ea014222-8a28-44d6-a841-5dd5c8563753'
+     value='0'
+     visibility='public'/>
+   <upperValue xmi:type='uml:LiteralUnlimitedNatural' xmi:uuid='urn:uuid:71b33e80-e85f-41f7-9e6f-182514e02fbb'
+     value='*'
+     visibility='public'/>
+  </ownedEnd>
+ </uml:Association>
+</xmi:XMI>

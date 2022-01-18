@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<xmi:XMI xmlns:xmi='http://www.omg.org/spec/XMI/20110701' xmlns:uml='http://www.omg.org/spec/UML/20110701' xmlns:DatabaseProfile='http://xmlns.oracle.com/ide/extension/db/1.0/DatabaseProfile.cmof'>
+ <documentation exporter='Oracle JDeveloper' exporterVersion='12.1.3.0.0'/>
+ <uml:ProfileApplication xmi:type='uml:ProfileApplication' xmi:uuid='urn:uuid:dfd69a60-ec8b-4865-a590-7c6df4cdc4a5'
+   appliedProfile='http://xmlns.oracle.com/ide/extension/db/1.0/DatabaseProfile.cmof#DatabaseProfile'
+   isStrict='false'>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabasePackage' xmi:uuid='urn:uuid:bbeb0c6b-4f5e-4b01-a0e5-663e1ecc0f2c'
+    databaseName='SCOTT'>
+   <basePackage href='urn:uuid:1d0d1da7-af80-4af2-b5cb-f8476dc29a39'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseClass' xmi:uuid='urn:uuid:eff7e5c7-612f-45fb-ab80-ced1efd39cfb'
+    databaseName='EMP'>
+   <baseClass href='urn:uuid:9e809da4-4d4b-462d-a792-9dfb9f4cdb80'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseAttribute' xmi:uuid='urn:uuid:92f0cc45-670d-46b4-a1fa-2185b17611a1'
+    databaseName=''
+    db2Datatype=''
+    defaultDatatype='NUMBER'
+    derbyDatatype=''
+    informixDatatype=''
+    microsoftDatatype=''
+    mySqlDatatype=''
+    oracleDatatype='NUMBER(8,0)'
+    primary='true'
+    sqlLiteDatatype='INT'
+    sybaseDatatype=''
+    timesTenDatatype=''>
+   <baseProperty href='urn:uuid:6123f1d3-bbe5-4cfc-9999-fe90143efd0b'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseAttribute' xmi:uuid='urn:uuid:9af1c3d5-71e8-4b6c-8457-ec820a6ee6c6'
+    databaseName=''
+    db2Datatype='VARCHAR(25)'
+    defaultDatatype='VARCHAR'
+    derbyDatatype=''
+    informixDatatype=''
+    microsoftDatatype=''
+    mySqlDatatype=''
+    oracleDatatype='VARCHAR2(30)'
+    sqlLiteDatatype='CHAR(20)'
+    sybaseDatatype=''
+    timesTenDatatype=''>
+   <baseProperty href='urn:uuid:ea582c91-317d-4cb7-af5d-d0c87115d51f'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseAttribute' xmi:uuid='urn:uuid:d3a55745-1e21-4c4f-bddb-ede4caa7cea1'
+    databaseName=''
+    db2Datatype=''
+    defaultDatatype='NUMBER(8,2)'
+    derbyDatatype=''
+    informixDatatype=''
+    microsoftDatatype=''
+    mySqlDatatype=''
+    oracleDatatype='NUMBER(10,2)'
+    sqlLiteDatatype='NUMBER(8,2)'
+    sybaseDatatype=''
+    timesTenDatatype=''>
+   <baseProperty href='urn:uuid:4b70574f-8ffa-40da-a854-c0dcb4874e19'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseAssociation' xmi:uuid='urn:uuid:f36ad99a-6b65-4db0-9091-0e164716ee36'
+    databaseName=''
+    namingRule='bothTables'>
+   <baseAssociation href='urn:uuid:60376ecb-f3c5-480d-9601-6425484c5b13'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseAttribute' xmi:uuid='urn:uuid:638fe074-c7b3-49f0-9c21-6e27e0ac51a5'
+    databaseName='Deptno'
+    db2Datatype=''
+    defaultDatatype=''
+    derbyDatatype=''
+    informixDatatype=''
+    microsoftDatatype=''
+    mySqlDatatype=''
+    oracleDatatype=''
+    sqlLiteDatatype=''
+    sybaseDatatype=''
+    timesTenDatatype=''>
+   <baseProperty href='urn:uuid:cb81f0d8-492d-4c30-a251-d3ded1c24368'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseClass' xmi:uuid='urn:uuid:cfc472f7-fa5f-4264-b24c-760e6f7e8207'
+    databaseName='Departments'>
+   <baseClass href='urn:uuid:3b0d12e3-960b-4cc8-aed8-f9a2e61051b5'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseClass' xmi:uuid='urn:uuid:e2888894-0660-4c06-81cf-4f793ae38731'
+    databaseName='Locations'>
+   <baseClass href='urn:uuid:34e2ab7d-9b6e-44e2-803d-a949b96ade22'/>
+  </ownedStereotypeObject>
+  <ownedStereotypeObject xmi:type='DatabaseProfile:DatabaseDatatype' xmi:uuid='urn:uuid:412d0704-08af-4d18-ad9a-2876c4e6c824'
+    db2Datatype='CHAR(50)'
+    defaultDatatype='VARCHAR(50)'
+    derbyDatatype=''
+    informixDatatype=''
+    microsoftDatatype=''
+    mySqlDatatype=''
+    oracleDatatype='CHAR(50)'
+    sqlLiteDatatype='VARCHAR2(50)'
+    sybaseDatatype=''
+    timesTenDatatype=''>
+   <baseType href='urn:uuid:09ef3bec-68d8-4bd2-a403-0e991ae58b71'/>
+  </ownedStereotypeObject>
+ </uml:ProfileApplication>
+</xmi:XMI>
